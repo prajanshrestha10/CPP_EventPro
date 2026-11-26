@@ -465,11 +465,7 @@ Lowest Attendance: 65
 
 ## 20. Screenshot
 
-A screenshot of the running EventPro application should be included here.
-
-![EventPro Application Screenshot](Presentation/EventPro_Screenshot.png)
-
-The screenshot should demonstrate the application's console interface and at least one important operation, such as adding sessions or displaying attendance statistics.
+![EventPro Application Screenshot](Screenshots/1_enter_organizer_information)
 
 ## 21. Testing
 
