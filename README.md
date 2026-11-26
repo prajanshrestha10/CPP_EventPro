@@ -564,16 +564,11 @@ https://github.com/prajanshrestha10/CPP_EventPro
 
 Development is tracked through meaningful commits documenting changes such as:
 
-- Initial project structure.
-- Organizer and Session class implementation.
-- Conference class and composition.
-- Constructors and member initializer lists.
-- Fixed-size session array.
-- Pointer-based array processing.
-- Search and attendance analysis.
-- Menu-driven application.
-- Input validation.
-- UML diagram and documentation.
+- initial project structure
+- added header files
+- added output screenshots
+- added .cpp files and uml diagram
+- revise screenshots section in README
 
 ## 23. YouTube Link
  
