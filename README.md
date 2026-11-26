@@ -463,9 +463,77 @@ Lowest Attendance: 65
 --------------------------------------------------
 ```
 
-## 20. Screenshot
+## 20. Screenshots
 
-![EventPro Application Screenshot](Screenshots/1_enter_organizer_information)
+enter_organizer_information
+
+![](Screenshots/1_enter_organizer_information.png)
+
+---
+
+add_a_conference_session
+
+![](Screenshots/2_add_a_conference_session.png)
+
+---
+
+display_all_sessions
+
+![](Screenshots/3_display_all_sessions.png)
+
+---
+
+search_for_a_session
+
+![](Screenshots/4_search_for_a_session.png)
+
+---
+
+highest_attendance
+
+![](Screenshots/5_highest_attendance.png)
+
+---
+
+lowest_attendance
+
+![](Screenshots/6_lowest_attendance.png)
+
+---
+
+average_attendance
+
+![](Screenshots/7_average_attendance.png)
+
+---
+
+update_attendance
+
+![](Screenshots/8_update_attendance.png)
+
+---
+
+total_attendance
+
+![](Screenshots/9_total_attendance.png)
+
+---
+
+complete_conference_summary
+
+![](Screenshots/10_complete_conference_summary.png)
+
+---
+
+emerging_computing_future_technology
+
+![](Screenshots/11_emerging_computing_future_technology.png)
+
+---
+
+exit
+
+![](Screenshots/12_exit.png)
 
 ## 21. Testing
 
