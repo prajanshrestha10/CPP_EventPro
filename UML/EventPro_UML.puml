@@ -1,0 +1,73 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Organizer {
+  - name : string
+  - organization : string
+  - email : string
+  + Organizer()
+  + Organizer(name : const string&, organization : const string&, email : const string&)
+  + setDetails(name : const string&, organization : const string&, email : const string&) : void
+  + getName() : string {query}
+  + getOrganization() : string {query}
+  + getEmail() : string {query}
+  + display() : void {query}
+}
+
+class Session {
+  - sessionID : int
+  - title : string
+  - speaker : string
+  - attendance : int
+  + Session()
+  + Session(sessionID : int, title : const string&, speaker : const string&, attendance : int)
+  + setDetails(sessionID : int, title : const string&, speaker : const string&, attendance : int) : void
+  + setAttendance(attendance : int) : void
+  + getSessionID() : int {query}
+  + getTitle() : string {query}
+  + getSpeaker() : string {query}
+  + getAttendance() : int {query}
+  + display() : void {query}
+}
+
+class Conference {
+  - conferenceID : const int
+  - conferenceName : string
+  - organizer : Organizer
+  - sessions : Session[8]
+  - sessionCount : int
+  - findSessionIndex(sessionID : int) : int {query}
+  + Conference()
+  + Conference(conferenceID : int, conferenceName : const string&)
+  + enterOrganizerInformation() : void
+  + addSession() : void
+  + displayAllSessions() : void {query}
+  + searchSession() : void {query}
+  + displayHighestAttendance() : void {query}
+  + displayLowestAttendance() : void {query}
+  + displayAverageAttendance() : void {query}
+  + updateAttendance() : void
+  + displayTotalAttendance() : void {query}
+  + displayConferenceSummary() : void {query}
+  + displayEmergingTechnologyInformation() : void {query}
+  + getConferenceID() : int {query}
+  + getConferenceName() : string {query}
+  + getSessionCount() : int {query}
+}
+
+Conference *-- "1" Organizer : has-a
+Conference *-- "0..8" Session : has-a
+
+note
+  conferenceID is const and initialized in the constructor initializer list.
+  sessions is a fixed-size array.
+end note
+
+note
+  Free function (not a class):
+    calculateAverageAttendance(const Session* ptr, int size) : double
+    Processes the Session array using pointer arithmetic:
+    (ptr + i)->getAttendance()
+end note
+
+@enduml
